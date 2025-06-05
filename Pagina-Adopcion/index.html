@@ -3,35 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
+    <meta name="description" content="Adopta una mascota y transforma su vida y la tuya con amor y alegría incondicional.">
+    <meta name="keywords" content="adopción, mascotas, perros, Huellitas, rescate, rehabilitación">
+    <meta name="author" content="Huellitas">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./imagenes/imagen-11.webp" as="image">
+    <link rel="preload" href="./imagenes/Imagen-1.webp" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" as="style">
+    
+    <!-- Load fonts with display=swap to avoid blocking text rendering -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Pacifico&family=Pattaya&family=Poetsen+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cherry+Bomb+One&family=Lobster&family=Pacifico&family=Pattaya&family=Poetsen+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Load Material Icons with display=swap -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
+    
+    <!-- Load CSS after fonts -->
     <link rel="stylesheet" href="style.css">
-    <title>Adopta una Mascota</title>
+    
+    <title>Adopta una Mascota - Huellitas</title>
 </head>
 <body>
     <header>
         <section class="navbar">
             <nav>
                 <div>
-                    <img src="https://img.freepik.com/foto-gratis/disparo-vertical-enfoque-superficial-lindo-cachorro-golden-retriever-sentado-suelo-hierba_181624-27259.jpg?semt=ais_items_boosted&w=740" alt="Imagen de un Perro" width="30" height="30">
+                    <img src="./imagenes/imagen-11.webp" alt="Logo Huellitas" width="30" height="30" loading="eager">
+                    <p><a href="#main-inicio">Huellitas</a></p>
                 </div>
                 <div>
                     <ul>
-                        <li><a href="#">
+                        <li><a href="#main-inicio">
                             <p>Inicio</p>
                             <span class="material-symbols-outlined">home</span>
                         </a></li>
-                        <li><a href="#">
+                        <li><a href="#about-content">
                             <p>Quienes Somos</p>
                             <span class="material-symbols-outlined">info</span>
                         </a></li>
-                        <li><a href="#">
+                        <li><a href="#gallery-section">
                             <p>Adopta</p>
                             <span class="material-symbols-outlined">pets</span>
                         </a></li>
-                        <li><a href="#">
+                        <li><a href="#contact-section">
                             <p>Contactanos</p>
                             <span class="material-symbols-outlined">mail</span>
                         </a></li>
@@ -40,10 +56,11 @@
             </nav>
         </section>
     </header>
+    
     <main>
-        <section class="main-inicio">
+        <section class="main-inicio" id="main-inicio">
             <div class="empezar">
-                <a href="#">¡Empezar!</a>
+                <a href="#about-content">¡Empezar!</a>
             </div>
             <div>
                 <article>
@@ -51,7 +68,8 @@
                 </article>
             </div>
         </section>
-        <section class="about-section">
+        
+        <section class="about-section" id="about-content">
             <div class="about-container">
                 <div class="about-content">
                     <h2>Huellitas</h2>
@@ -76,170 +94,182 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&h=400&fit=crop" alt="Refugio Huellitas">
+                    <img src="./imagenes/Imagen-1.webp" alt="Refugio Huellitas mostrando instalaciones" width="600" height="400" loading="eager">
                 </div>
             </div>
-            </section>
-        <section class="gallery-section">
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400" alt="Perro 1">
-                <div class="gallery-overlay">
-                    <p>¡Adóptame!</p>
+        </section>
+        
+        <section class="gallery-section" id="gallery-section">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./imagenes/imagen-2.webp" alt="Perro disponible para adopción" width="300" height="300" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>¡Adóptame!</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./imagenes/imagen-3.webp" alt="Cachorro disponible para adopción" width="300" height="300" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>¡Adóptame!</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./imagenes/imagen-4.webp" alt="Perro adulto disponible para adopción" width="300" height="300" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>¡Adóptame!</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./imagenes/imagen-5.webp" alt="Perro mestizo disponible para adopción" width="300" height="300" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>¡Adóptame!</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/imagen-11.webp" alt="Perro pequeño disponible para adopción" width="300" height="300" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>¡Adóptame!</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/imagen-6.webp" alt="Perro grande disponible para adopción" width="300" height="300" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>¡Adóptame!</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/imagen-7.webp" alt="Perro joven disponible para adopción" width="300" height="300" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>¡Adóptame!</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/imagen-8.webp" alt="Perro cariñoso disponible para adopción" width="300" height="300" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>¡Adóptame!</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/imagen-9.webp" alt="Perro activo disponible para adopción" width="300" height="300" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>¡Adóptame!</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/imagen-10.webp" alt="Perro tranquilo disponible para adopción" width="300" height="300" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>¡Adóptame!</p>
+                    </div>
                 </div>
             </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?w=400" alt="Perro 2">
-                <div class="gallery-overlay">
-                    <p>¡Adóptame!</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=400" alt="Perro 3">
-                <div class="gallery-overlay">
-                    <p>¡Adóptame!</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400" alt="Perro 4">
-                <div class="gallery-overlay">
-                    <p>¡Adóptame!</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400" alt="Perro 5">
-                <div class="gallery-overlay">
-                    <p>¡Adóptame!</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400" alt="Perro 6">
-                <div class="gallery-overlay">
-                    <p>¡Adóptame!</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1546975490-e8b92a360b24?w=400" alt="Perro 7">
-                <div class="gallery-overlay">
-                    <p>¡Adóptame!</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=400" alt="Perro 8">
-                <div class="gallery-overlay">
-                    <p>¡Adóptame!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact-section">
-        <div class="contact-container">
-            <div class="contact-header">
-                <h2>Contáctanos</h2>
-                <p>¿Listo para cambiar una vida? Ponte en contacto con nosotros y encuentra a tu compañero perfecto</p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Nombre Completo</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Correo Electrónico</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Teléfono</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" placeholder="Cuéntanos sobre ti y qué tipo de mascota estás buscando..." required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
-                    </form>
+        </section>
+        
+        <section class="contact-section" id="contact-section">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2>Contáctanos</h2>
+                    <p>¿Listo para cambiar una vida? Ponte en contacto con nosotros y encuentra a tu compañero perfecto</p>
                 </div>
                 
-                <div class="contact-info">
-                    <h3>Información de Contacto</h3>
-                    
-                    <div class="info-item">
-                        <span class="material-symbols-outlined icon">location_on</span>
-                        <div class="content">
-                            <h4>Dirección</h4>
-                            <p>Calle 45 #23-67, Barranquilla<br>Atlántico, Colombia</p>
-                        </div>
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nombre Completo</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" placeholder="Cuéntanos sobre ti y qué tipo de mascota estás buscando..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                        </form>
                     </div>
                     
-                    <div class="info-item">
-                        <span class="material-symbols-outlined icon">call</span>
-                        <div class="content">
-                            <h4>Teléfono</h4>
-                            <p>+57 300 123 4567<br>+57 5 123 4567</p>
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        
+                        <div class="info-item">
+                            <span class="material-symbols-outlined icon">location_on</span>
+                            <div class="content">
+                                <h4>Dirección</h4>
+                                <p>Calle 45 #23-67, Barranquilla<br>Atlántico, Colombia</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <span class="material-symbols-outlined icon">mail</span>
-                        <div class="content">
-                            <h4>Email</h4>
-                            <p>info@huellitas.com<br>adopciones@huellitas.com</p>
+                        
+                        <div class="info-item">
+                            <span class="material-symbols-outlined icon">call</span>
+                            <div class="content">
+                                <h4>Teléfono</h4>
+                                <p>+57 300 123 4567<br>+57 5 123 4567</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <span class="material-symbols-outlined icon">schedule</span>
-                        <div class="content">
-                            <h4>Horario de Atención</h4>
-                            <p>Lunes a Viernes: 8:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 4:00 PM</p>
+                        
+                        <div class="info-item">
+                            <span class="material-symbols-outlined icon">mail</span>
+                            <div class="content">
+                                <h4>Email</h4>
+                                <p>info@huellitas.com<br>adopciones@huellitas.com</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <span class="material-symbols-outlined">favorite</span>
-                        </a>
-                        <a href="#" class="social-link">
-                            <span class="material-symbols-outlined">share</span>
-                        </a>
-                        <a href="#" class="social-link">
-                            <span class="material-symbols-outlined">pets</span>
-                        </a>
+                        
+                        <div class="info-item">
+                            <span class="material-symbols-outlined icon">schedule</span>
+                            <div class="content">
+                                <h4>Horario de Atención</h4>
+                                <p>Lunes a Viernes: 8:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Favoritos">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Compartir">
+                                <span class="material-symbols-outlined">share</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Mascotas">
+                                <span class="material-symbols-outlined">pets</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </main>
+    
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="https://img.freepik.com/foto-gratis/disparo-vertical-enfoque-superficial-lindo-cachorro-golden-retriever-sentado-suelo-hierba_181624-27259.jpg?semt=ais_items_boosted&w=740" alt="Logo">
-                        <span>Tu Sitio</span>
+                        <img src="./imagenes/logo-prin.webp" alt="Logo Huellitas" width="40" height="40" loading="lazy">
+                        <span>Huellitas</span>
                     </div>
-                    <p>Descripción breve de tu negocio o sitio web.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
+                    <p>En Huellitas, creemos que cada animal merece una segunda oportunidad y un hogar lleno de amor. 
+                        Somos una organización dedicada al rescate, rehabilitación y adopción responsable de mascotas 
+                        que han sido abandonadas o se encuentran en situación de vulnerabilidad.</p>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Enlaces Rápidos</h3>
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#galeria">Galería</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#main-inicio">Inicio</a></li>
+                        <li><a href="#about-content">Quienes Somos</a></li>
+                        <li><a href="#gallery-section">Adopta</a></li>
+                        <li><a href="#contact-section">Contactanos</a></li>
                     </ul>
                 </div>
                 
@@ -248,15 +278,15 @@
                     <div class="contact-info-footer">
                         <div class="contact-item-footer">
                             <span class="icon">📍</span>
-                            <span>Tu dirección aquí</span>
+                            <span>Aquí va mi Dirección pero no la colocaré</span>
                         </div>
                         <div class="contact-item-footer">
                             <span class="icon">📞</span>
-                            <span>+57 123 456 7890</span>
+                            <span>+57 Tampoco mi número</span>
                         </div>
                         <div class="contact-item-footer">
                             <span class="icon">✉️</span>
-                            <span>info@tusitio.com</span>
+                            <span>luisoro009@gmail.com</span>
                         </div>
                     </div>
                 </div>
@@ -268,7 +298,7 @@
                     <a href="#">Términos de Servicio</a>
                     <a href="#">Cookies</a>
                 </div>
-                <p>&copy; 2025 Tu Sitio. Todos los derechos reservados.</p>
+                <p>&copy; 2025 Huellitas. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
